@@ -1,6 +1,6 @@
 {
   "name": "gilp-merge-conflict",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Gilp plugin to detect merge conflicts.",
   "main": "lib/index.js",
   "directories": {
