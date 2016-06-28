@@ -1,4 +1,4 @@
-# Gulp Merge Conflict
+# Gilp Merge Conflict
 
 [![travis][travis-image]][travis-url]
 [![coverage][coveralls-image]][coveralls-url]
@@ -19,14 +19,14 @@ npm install gilp-merge-conflict
 
 ## License
 
-Gulp Merge Conflict is Copyright (c) 2016 sophilabs, inc. It is free software, and may be
+Gilp Merge Conflict is Copyright (c) 2016 sophilabs, inc. It is free software, and may be
 redistributed under the terms specified in the [license] file.
 
 ## About
 
 [![sophilabs][sophilabs-image]][sophilabs-url]
 
-Gulp Merge Conflict is maintained and funded by sophilabs, inc. The names and logos for
+Gilp Merge Conflict is maintained and funded by sophilabs, inc. The names and logos for
 sophilabs are trademarks of sophilabs, inc.
 
 [license]: /LICENSE
