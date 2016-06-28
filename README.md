@@ -17,6 +17,19 @@ Gilp plugin to detect merge conflicts.
 npm install gilp-merge-conflict
 ```
 
+## Usage
+
+```javascript
+var gulp = require('gulp');
+var gilpMergeConflict = require('gilp-merge-conflict');
+
+gulp.task('isort', function () {
+  return gulp.src('**/*')
+    .pipe(gilpMergeConflict())
+    .pipe(gilpMergeConflict.failOnError());
+});
+```
+
 ## License
 
 Gilp Merge Conflict is Copyright (c) 2016 sophilabs, inc. It is free software, and may be
