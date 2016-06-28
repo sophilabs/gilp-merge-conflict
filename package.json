@@ -17,7 +17,8 @@
   "keywords": [
     "git",
     "merge conflict",
-    "gulp"
+    "gulpplugin",
+    "gilpplugin"
   ],
   "author": "Sophilabs",
   "license": "MIT",
