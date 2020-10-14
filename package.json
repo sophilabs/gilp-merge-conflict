@@ -1,14 +1,13 @@
 {
   "name": "gilp-merge-conflict",
-  "version": "0.0.3",
+  "version": "0.0.10",
   "description": "Gilp plugin to detect merge conflicts.",
   "main": "lib/index.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec $(find ./test -name *.tests.js) && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
-    "lint": "semistandard *.js"
+    "lint": "semistandard",
+    "pretest": "npm run lint --scripts-prepend-node-path",
+    "test": "jest",
+    "coverage": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -26,17 +25,23 @@
     "url": "https://github.com/sophilabs/gilp-merge-conflict/issues"
   },
   "homepage": "https://github.com/sophilabs/gilp-merge-conflict#readme",
+  "engines": {
+    "node": ">= 10.0"
+  },
   "dependencies": {
-    "gilp-util": "^0.0.6",
+    "gilp-util": "^0.0.10",
     "gulp-util": "^3.0.7",
-    "through2": "^2.0.1"
+    "through2": "^4.0.2"
   },
   "devDependencies": {
-    "coveralls": "^2.11.9",
-    "istanbul": "^0.4.4",
-    "mocha": "^2.5.3",
-    "semistandard": "^8.0.0",
-    "should": "^9.0.2",
-    "vinyl": "^1.1.1"
+    "coveralls": "3.1.0",
+    "jest": "^26.5.3",
+    "semistandard": "*",
+    "vinyl": "^2.2.1"
+  },
+  "semistandard": {
+    "env": [
+      "jest"
+    ]
   }
 }
